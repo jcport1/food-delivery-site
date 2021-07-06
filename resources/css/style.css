@@ -12,3 +12,12 @@ html {
     font-size: 20px;
     text-rendering: optimizeLegibility;
 }
+
+/* only value that has px
+all other layout margins/padding values will be definied in percentages */
+
+.row {
+    max-width: 1140px;
+    /* center rows */
+    margin: 0 auto;
+}
