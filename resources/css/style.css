@@ -21,3 +21,29 @@ all other layout margins/padding values will be definied in percentages */
     /* center rows */
     margin: 0 auto;
 }
+
+/* Header */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    /* we want to see the whole img so use background size */
+    background-size: cover;
+    background-position: center;
+    /* fill viewport with the image */
+    height: 100vh;
+}
+
+.hero-text-box {
+    /* position box by overiding grid css by using position absolute
+    this gives us more control */
+    position: absolute;
+    width: 1140px;
+    /* center box */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    margin: 0;
+}
