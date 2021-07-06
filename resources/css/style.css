@@ -21,3 +21,85 @@ all other layout margins/padding values will be definied in percentages */
     /* center rows */
     margin: 0 auto;
 }
+
+/* Header */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    /* we want to see the whole img so use background size */
+    background-size: cover;
+    background-position: center;
+    /* fill viewport with the image */
+    height: 100vh;
+}
+
+.hero-text-box {
+    /* position box by overiding grid css by using position absolute
+    this gives us more control */
+    position: absolute;
+    width: 1140px;
+    /* center box */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    /* responsive website - use percentages
+    we want our font size to be twice as big as our standard font size - 20px */
+    font-size: 240%;
+    /* h1 by default makes text bold */
+    font-weight: 300;
+    text-transform: uppercase;
+    /* add spacing */
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+/* hero text buttons */
+
+/* common styles for buttons */
+
+.btn:link, .btn:visited {
+    /* gives inline element some block properties like padding */
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 30;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+/* specific button classes style */
+
+.btn-full:link, .btn-full:visited {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link, .btn-ghost:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+/* different button states - order matters 
+declare after all declatarions have been made for elements */
+
+.btn:hover, .btn:active {
+    background-color: #cf6d17;
+
+}
+
+.btn-full:hover, .btn-full:active {
+    border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover, .btn-ghost:active {
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
