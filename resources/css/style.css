@@ -211,3 +211,59 @@ header {
     border-bottom: 2px solid #e67e22 ;
 }
 
+/* Features */
+
+.section-features .long-copy {
+    margin-bottom: 30px;
+
+}
+
+
+/* Meals */
+
+.section-meals {
+    padding: 0;
+}
+
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    /* img overflows from container - so make the overflow hidden
+    so it's not bigger than container */
+    overflow: hidden;
+    /* make background black so opacity is on dark background instead of white */
+    background-color: #000;
+}
+
+.meal-photo img {
+    /* make img darker */
+    opacity: 0.7;
+    /* make width exactly the same as parent container */
+    width: 100%;
+    height: auto;
+    /* scale image to make 115% of size */
+    transform: scale(1.15);
+    /* add transition for smooth animation effect */
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+    /* zoom back to normal */
+    transform: scale(1.03);
+    /* change opacity back to 1 */
+    opacity: 1;
+
+}
