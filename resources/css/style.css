@@ -150,7 +150,9 @@ h2:after {
 
 /* common styles for buttons */
 
-.btn:link, .btn:visited {
+.btn:link, 
+.btn:visited,
+input[type=submit] {
     /* gives inline element some block properties like padding */
     display: inline-block;
     padding: 10px 30px;
@@ -162,7 +164,9 @@ h2:after {
 
 /* specific button classes style */
 
-.btn-full:link, .btn-full:visited {
+.btn-full:link, 
+.btn-full:visited,
+input[type=submit] {
     background-color: #e67e22;
     border: 1px solid #e67e22;
     color: #fff;
@@ -177,12 +181,16 @@ h2:after {
 /* different button states - order matters 
 declare after all declatarions have been made for elements */
 
-.btn:hover, .btn:active {
+.btn:hover, 
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
     background-color: #cf6d17;
 
 }
 
-.btn-full:hover, .btn-full:active {
+.btn-full:hover, 
+.btn-full:active {
     border: 1px solid #cf6d17;
 }
 
@@ -480,3 +488,33 @@ cite img {
     text-align: center;
     border: 0;
 }
+
+/* Contact Form */
+
+.contact-form {
+    width: 60%;
+    /* centers form  */
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+/* removes border google chrome adds to input fields */
+
+*:focus {outline: none;}
