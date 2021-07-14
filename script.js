@@ -65,5 +65,13 @@ $('.js--wp-4').waypoint(function(direction){
     offset: '50%'
 });
 
+/* Mobile Nav */
+
+$('.js--nav-icon').click(function() {
+    const nav = $('.js--main-nav');
+    nav.slideToggle(200);
+
+})
+
   
 });

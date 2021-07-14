@@ -273,6 +273,20 @@ header {
     border-bottom: 2px solid #e67e22 ;
 }
 
+/* Mobile Nav */
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-icon {
+    font-size: 200%;
+    color: #fff;
+}
+
 /* Sticky Nav */
 
 .sticky {
@@ -299,7 +313,7 @@ header {
     color: #555;
 }
 
-.main-nav { margin-top: 18px; }
+.sticky .main-nav { margin-top: 18px; }
 
 /* if sticky is visible, hide white logo */
 
